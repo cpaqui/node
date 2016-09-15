@@ -15,6 +15,8 @@ exports.initRotas = function(app) {
 
     app.get("/api/oi/str", (req, resp) => resp.send(modeloStr));
 
+    app.get("/api/teste", (req, resp) => resp.send("teste"));
+
     app.get("/api/oi/str2", function(req, resp) {
         resp.send(modeloStr2);
     });
